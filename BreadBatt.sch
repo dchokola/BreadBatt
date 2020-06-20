@@ -1,0 +1,860 @@
+EESchema Schematic File Version 4
+LIBS:BreadBatt-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "2018-11-04"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Battery_Management:LTC4054ES5-4.2 U1
+U 1 1 5BDF5D85
+P 5200 2850
+F 0 "U1" H 4900 3100 50  0000 L CNN
+F 1 "LTC4054ES5-4.2" H 5250 2500 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 5200 2350 50  0001 C CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/405442xf.pdf" H 5200 2750 50  0001 C CNN
+F 4 "Digi-Key" H 5200 2850 50  0001 C CNN "Vendor"
+F 5 "LTC4054ES5-4.2#TRMPBFCT-ND" H 5200 2850 50  0001 C CNN "Vendor Part Number"
+F 6 "Linear Technology/Analog Devices" H 5200 2850 50  0001 C CNN "Manufacturer"
+F 7 "LTC4054ES5-4.2#TRMPBF" H 5200 2850 50  0001 C CNN "Manufacturer Part Number"
+	1    5200 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5BDF5EAA
+P 5200 3350
+F 0 "#PWR011" H 5200 3100 50  0001 C CNN
+F 1 "GND" H 5205 3177 50  0000 C CNN
+F 2 "" H 5200 3350 50  0001 C CNN
+F 3 "" H 5200 3350 50  0001 C CNN
+	1    5200 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3350 5200 3250
+$Comp
+L Connector_Generic_Shielded:Conn_01x05_Shielded J7
+U 1 1 5BDF5FCE
+P 7450 2900
+F 0 "J7" H 7537 2865 50  0000 L CNN
+F 1 "Conn_01x05_Shielded" H 7537 2774 50  0000 L CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 7450 2900 50  0001 C CNN
+F 3 "~" H 7450 2900 50  0001 C CNN
+F 4 "Digi-Key" H 7450 2900 50  0001 C CNN "Vendor"
+F 5 "WM1399CT-ND" H 7450 2900 50  0001 C CNN "Vendor Part Number"
+F 6 "Molex, LLC" H 7450 2900 50  0001 C CNN "Manufacturer"
+F 7 "1050170001" H 7450 2900 50  0001 C CNN "Manufacturer Part Number"
+	1    7450 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 5BDF6965
+P 7450 3350
+F 0 "#PWR026" H 7450 3100 50  0001 C CNN
+F 1 "GND" H 7455 3177 50  0000 C CNN
+F 2 "" H 7450 3350 50  0001 C CNN
+F 3 "" H 7450 3350 50  0001 C CNN
+	1    7450 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3350 7450 3300
+$Comp
+L power:VBUS #PWR015
+U 1 1 5BDF6A5A
+P 5550 2050
+F 0 "#PWR015" H 5550 1900 50  0001 C CNN
+F 1 "VBUS" H 5565 2223 50  0000 C CNN
+F 2 "" H 5550 2050 50  0001 C CNN
+F 3 "" H 5550 2050 50  0001 C CNN
+	1    5550 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR022
+U 1 1 5BDF6A74
+P 7200 2650
+F 0 "#PWR022" H 7200 2500 50  0001 C CNN
+F 1 "VBUS" H 7215 2823 50  0000 C CNN
+F 2 "" H 7200 2650 50  0001 C CNN
+F 3 "" H 7200 2650 50  0001 C CNN
+	1    7200 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2650 7200 2700
+Wire Wire Line
+	7200 2700 7250 2700
+NoConn ~ 7250 2800
+NoConn ~ 7250 2900
+NoConn ~ 7250 3000
+Wire Wire Line
+	7250 3100 7200 3100
+Wire Wire Line
+	7200 3100 7200 3350
+$Comp
+L power:GND #PWR023
+U 1 1 5BDF6D60
+P 7200 3350
+F 0 "#PWR023" H 7200 3100 50  0001 C CNN
+F 1 "GND" H 7205 3177 50  0000 C CNN
+F 2 "" H 7200 3350 50  0001 C CNN
+F 3 "" H 7200 3350 50  0001 C CNN
+	1    7200 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2050 5550 2100
+$Comp
+L Device:D_Schottky_x2_KCom_AKA D2
+U 1 1 5BDF6BB3
+P 5200 2100
+F 0 "D2" H 5200 2316 50  0000 C CNN
+F 1 "BAT120C,115" H 5200 2225 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5200 2100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAT120_SERIES.pdf" H 5200 2100 50  0001 C CNN
+F 4 "Digi-Key" H 5200 2100 50  0001 C CNN "Vendor"
+F 5 "1727-5450-1-ND" H 5200 2100 50  0001 C CNN "Vendor Part Number"
+F 6 "Nexperia USA Inc." H 5200 2100 50  0001 C CNN "Manufacturer"
+F 7 "BAT120C,115" H 5200 2100 50  0001 C CNN "Manufacturer Part Number"
+	1    5200 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2100 5500 2100
+$Comp
+L power:+BATT #PWR019
+U 1 1 5BDF6F1E
+P 6100 2800
+F 0 "#PWR019" H 6100 2650 50  0001 C CNN
+F 1 "+BATT" H 6115 2973 50  0000 C CNN
+F 2 "" H 6100 2800 50  0001 C CNN
+F 3 "" H 6100 2800 50  0001 C CNN
+	1    6100 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-BATT #PWR020
+U 1 1 5BDF6FC8
+P 6100 3350
+F 0 "#PWR020" H 6100 3200 50  0001 C CNN
+F 1 "-BATT" H 6115 3523 50  0000 C CNN
+F 2 "" H 6100 3350 50  0001 C CNN
+F 3 "" H 6100 3350 50  0001 C CNN
+	1    6100 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5BDF70C9
+P 6100 3100
+F 0 "BT1" H 6218 3196 50  0000 L CNN
+F 1 "3.7 V Li-Ion 16340" H 6218 3105 50  0000 L CNN
+F 2 "KiCad:BHC-CR123A" V 6100 3160 50  0001 C CNN
+F 3 "http://shogyo.com/wp-content/themes/shogyo/pdf/bhc-cr123a(revised).pdf" V 6100 3160 50  0001 C CNN
+F 4 "Shogyo International Corp." H 6100 3100 50  0001 C CNN "Manufacturer"
+F 5 "BHC-CR123A" H 6100 3100 50  0001 C CNN "Manufacturer Part Number"
+	1    6100 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2900 6100 2850
+Wire Wire Line
+	6100 3200 6100 3300
+Wire Wire Line
+	6100 2850 5600 2850
+Connection ~ 6100 2850
+Wire Wire Line
+	6100 2850 6100 2800
+Wire Wire Line
+	6100 3300 5800 3300
+Wire Wire Line
+	5800 3300 5800 3350
+Connection ~ 6100 3300
+Wire Wire Line
+	6100 3300 6100 3350
+$Comp
+L power:GND #PWR017
+U 1 1 5BDF758A
+P 5800 3350
+F 0 "#PWR017" H 5800 3100 50  0001 C CNN
+F 1 "GND" H 5805 3177 50  0000 C CNN
+F 2 "" H 5800 3350 50  0001 C CNN
+F 3 "" H 5800 3350 50  0001 C CNN
+	1    5800 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5BDF7609
+P 4750 3150
+F 0 "R3" H 4681 3104 50  0000 R CNN
+F 1 "1k27" H 4681 3195 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4680 3150 50  0001 C CNN
+F 3 "~" H 4750 3150 50  0001 C CNN
+F 4 "Digi-Key" H 4750 3150 50  0001 C CNN "Vendor"
+F 5 "P1.27KLCT-ND" H 4750 3150 50  0001 C CNN "Vendor Part Number"
+F 6 "Panasonic Electronic Components" H 4750 3150 50  0001 C CNN "Manufacturer"
+F 7 "ERJ-2RKF1271X" H 4750 3150 50  0001 C CNN "Manufacturer Part Number"
+	1    4750 3150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4750 3000 4750 2950
+Wire Wire Line
+	4750 2950 4800 2950
+Wire Wire Line
+	4750 3300 4750 3350
+$Comp
+L power:GND #PWR07
+U 1 1 5BDF7A37
+P 4750 3350
+F 0 "#PWR07" H 4750 3100 50  0001 C CNN
+F 1 "GND" H 4755 3177 50  0000 C CNN
+F 2 "" H 4750 3350 50  0001 C CNN
+F 3 "" H 4750 3350 50  0001 C CNN
+	1    4750 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5BDF7C68
+P 5400 2400
+F 0 "C2" V 5250 2400 50  0000 C CNN
+F 1 "1u" V 5550 2400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5438 2250 50  0001 C CNN
+F 3 "~" H 5400 2400 50  0001 C CNN
+F 4 "Digi-Key" H 5400 2400 50  0001 C CNN "Vendor"
+F 5 "445-13181-1-ND" H 5400 2400 50  0001 C CNN "Vendor Part Number"
+F 6 "TDK Corporation" H 5400 2400 50  0001 C CNN "Manufacturer"
+F 7 "CGB2A1X5R1C105K033BC" H 5400 2400 50  0001 C CNN "Manufacturer Part Number"
+	1    5400 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5BDF7E04
+P 5600 2450
+F 0 "#PWR016" H 5600 2200 50  0001 C CNN
+F 1 "GND" H 5605 2277 50  0000 C CNN
+F 2 "" H 5600 2450 50  0001 C CNN
+F 3 "" H 5600 2450 50  0001 C CNN
+	1    5600 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2450 5600 2400
+Wire Wire Line
+	5600 2400 5550 2400
+Wire Wire Line
+	5250 2400 5200 2400
+Wire Wire Line
+	5200 2400 5200 2550
+Wire Wire Line
+	5200 2300 5200 2400
+Connection ~ 5200 2400
+$Comp
+L Device:LED D3
+U 1 1 5BDFA81E
+P 7200 4950
+F 0 "D3" V 7145 5028 50  0000 L CNN
+F 1 "LED, Green" V 7236 5028 50  0000 L CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 7200 4950 50  0001 C CNN
+F 3 "~" H 7200 4950 50  0001 C CNN
+F 4 "Digi-Key" H 7200 4950 50  0001 C CNN "Vendor"
+F 5 "732-11992-1-ND" H 7200 4950 50  0001 C CNN "Vendor Part Number"
+F 6 "Wurth Electronics Inc." H 7200 4950 50  0001 C CNN "Manufacturer"
+F 7 "150040VS73240" H 7200 4950 50  0001 C CNN "Manufacturer Part Number"
+	1    7200 4950
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5BDFA985
+P 4350 2650
+F 0 "D1" V 4295 2729 50  0000 L CNN
+F 1 "LED, Yellow" V 4386 2729 50  0000 L CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 4350 2650 50  0001 C CNN
+F 3 "~" H 4350 2650 50  0001 C CNN
+F 4 "Digi-Key" H 4350 2650 50  0001 C CNN "Vendor"
+F 5 "732-11993-1-ND" H 4350 2650 50  0001 C CNN "Vendor Part Number"
+F 6 "Wurth Electronics Inc." H 4350 2650 50  0001 C CNN "Manufacturer"
+F 7 "150040YS73240" H 4350 2650 50  0001 C CNN "Manufacturer Part Number"
+	1    4350 2650
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR08
+U 1 1 5BDFAB54
+P 4850 2050
+F 0 "#PWR08" H 4850 1900 50  0001 C CNN
+F 1 "+5V" H 4865 2223 50  0000 C CNN
+F 2 "" H 4850 2050 50  0001 C CNN
+F 3 "" H 4850 2050 50  0001 C CNN
+	1    4850 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2050 4850 2100
+Wire Wire Line
+	4850 2100 4900 2100
+$Comp
+L Device:R R6
+U 1 1 5BDFAEA8
+P 7200 4600
+F 0 "R6" H 7131 4554 50  0000 R CNN
+F 1 "1k" H 7131 4645 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7130 4600 50  0001 C CNN
+F 3 "~" H 7200 4600 50  0001 C CNN
+F 4 "Digi-Key" H 7200 4600 50  0001 C CNN "Vendor"
+F 5 "1276-3430-1-ND" H 7200 4600 50  0001 C CNN "Vendor Part Number"
+F 6 "Samsung Electro-Mechanics" H 7200 4600 50  0001 C CNN "Manufacturer"
+F 7 "RC1005F102CS" H 7200 4600 50  0001 C CNN "Manufacturer Part Number"
+	1    7200 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BDFB016
+P 4350 2300
+F 0 "R2" H 4281 2254 50  0000 R CNN
+F 1 "1k" H 4281 2345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4280 2300 50  0001 C CNN
+F 3 "~" H 4350 2300 50  0001 C CNN
+F 4 "Digi-Key" H 4350 2300 50  0001 C CNN "Vendor"
+F 5 "1276-3430-1-ND" H 4350 2300 50  0001 C CNN "Vendor Part Number"
+F 6 "Samsung Electro-Mechanics" H 4350 2300 50  0001 C CNN "Manufacturer"
+F 7 "RC1005F102CS" H 4350 2300 50  0001 C CNN "Manufacturer Part Number"
+	1    4350 2300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7200 4750 7200 4800
+Wire Wire Line
+	4350 2450 4350 2500
+Wire Wire Line
+	4350 2850 4350 2800
+Wire Wire Line
+	4350 2850 4800 2850
+$Comp
+L power:GND #PWR025
+U 1 1 5BDFCB25
+P 7200 5150
+F 0 "#PWR025" H 7200 4900 50  0001 C CNN
+F 1 "GND" H 7205 4977 50  0000 C CNN
+F 2 "" H 7200 5150 50  0001 C CNN
+F 3 "" H 7200 5150 50  0001 C CNN
+	1    7200 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 5150 7200 5100
+$Comp
+L power:+BATT #PWR06
+U 1 1 5BDF94E8
+P 4350 2100
+F 0 "#PWR06" H 4350 1950 50  0001 C CNN
+F 1 "+BATT" H 4365 2273 50  0000 C CNN
+F 2 "" H 4350 2100 50  0001 C CNN
+F 3 "" H 4350 2100 50  0001 C CNN
+	1    4350 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2150 4350 2100
+Wire Wire Line
+	7200 4450 7200 4400
+$Comp
+L KiCad:LD39200D U2
+U 1 1 5BDFB3E8
+P 5200 4600
+F 0 "U2" H 5200 5165 50  0000 C CNN
+F 1 "LD39200D" H 5200 5074 50  0000 C CNN
+F 2 "Package_DFN_QFN:DFN-8-1EP_4x4mm_P0.8mm_EP2.5x3.6mm" H 4750 4950 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/4b/e6/2e/a4/16/04/46/9d/DM00102135.pdf/files/DM00102135.pdf/jcr:content/translations/en.DM00102135.pdf" H 4850 5050 50  0001 C CNN
+F 4 "Digi-Key" H 5200 4600 50  0001 C CNN "Vendor"
+F 5 "497-14961-1-ND" H 5200 4600 50  0001 C CNN "Vendor Part Number"
+F 6 "STMicroelectronics" H 5150 5350 50  0001 C CNN "Manufacturer"
+F 7 "LD39200DPUR" H 5200 4600 50  0001 C CNN "Manufacturer Part Number"
+	1    5200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5BDFB4B9
+P 5200 5200
+F 0 "#PWR012" H 5200 4950 50  0001 C CNN
+F 1 "GND" H 5205 5027 50  0000 C CNN
+F 2 "" H 5200 5200 50  0001 C CNN
+F 3 "" H 5200 5200 50  0001 C CNN
+	1    5200 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 5200 5200 5150
+$Comp
+L Device:R R5
+U 1 1 5BDFBC2C
+P 5950 5000
+F 0 "R5" H 5881 4954 50  0000 R CNN
+F 1 "1k" H 5881 5045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5880 5000 50  0001 C CNN
+F 3 "~" H 5950 5000 50  0001 C CNN
+F 4 "Digi-Key" H 5950 5000 50  0001 C CNN "Vendor"
+F 5 "1276-3430-1-ND" H 5950 5000 50  0001 C CNN "Vendor Part Number"
+F 6 "Samsung Electro-Mechanics" H 5950 5000 50  0001 C CNN "Manufacturer"
+F 7 "RC1005F102CS" H 5950 5000 50  0001 C CNN "Manufacturer Part Number"
+	1    5950 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5BDFBDFA
+P 5950 4600
+F 0 "R4" H 5881 4554 50  0000 R CNN
+F 1 "5k6" H 5881 4645 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5880 4600 50  0001 C CNN
+F 3 "~" H 5950 4600 50  0001 C CNN
+F 4 "Digi-Key" H 5950 4600 50  0001 C CNN "Vendor"
+F 5 "311-5.6KJRCT-ND" H 5950 4600 50  0001 C CNN "Vendor Part Number"
+F 6 "Yageo" H 5950 4600 50  0001 C CNN "Manufacturer"
+F 7 "RC0402JR-075K6L" H 5950 4600 50  0001 C CNN "Manufacturer Part Number"
+	1    5950 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+BATT #PWR03
+U 1 1 5BDFC519
+P 3750 4350
+F 0 "#PWR03" H 3750 4200 50  0001 C CNN
+F 1 "+BATT" H 3765 4523 50  0000 C CNN
+F 2 "" H 3750 4350 50  0001 C CNN
+F 3 "" H 3750 4350 50  0001 C CNN
+	1    3750 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5BDFC7C1
+P 3750 4600
+F 0 "C1" H 3635 4554 50  0000 R CNN
+F 1 "10u" H 3635 4645 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3788 4450 50  0001 C CNN
+F 3 "~" H 3750 4600 50  0001 C CNN
+F 4 "Digi-Key" H 3750 4600 50  0001 C CNN "Vendor"
+F 5 "1276-6827-1-ND" H 3750 4600 50  0001 C CNN "Vendor Part Number"
+F 6 "Samsung Electro-Mechanics" H 3750 4600 50  0001 C CNN "Manufacturer"
+F 7 "CL10X106MQ8NNNC" H 3750 4600 50  0001 C CNN "Manufacturer Part Number"
+	1    3750 4600
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5BDFC893
+P 6300 4600
+F 0 "C3" H 6415 4646 50  0000 L CNN
+F 1 "470n" H 6415 4555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6338 4450 50  0001 C CNN
+F 3 "~" H 6300 4600 50  0001 C CNN
+F 4 "Digi-Key" H 6300 4600 50  0001 C CNN "Vendor"
+F 5 "1276-1752-1-ND" H 6300 4600 50  0001 C CNN "Vendor Part Number"
+F 6 "Samsung Electro-Mechanics" H 6300 4600 50  0001 C CNN "Manufacturer"
+F 7 "CL05F474ZQ5NNNC" H 6300 4600 50  0001 C CNN "Manufacturer Part Number"
+	1    6300 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5BDFC9C6
+P 6750 4600
+F 0 "C4" H 6865 4646 50  0000 L CNN
+F 1 "10u" H 6865 4555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6788 4450 50  0001 C CNN
+F 3 "~" H 6750 4600 50  0001 C CNN
+F 4 "Digi-Key" H 6750 4600 50  0001 C CNN "Vendor"
+F 5 "1276-6827-1-ND" H 6750 4600 50  0001 C CNN "Vendor Part Number"
+F 6 "Samsung Electro-Mechanics" H 6750 4600 50  0001 C CNN "Manufacturer"
+F 7 "CL10X106MQ8NNNC" H 6750 4600 50  0001 C CNN "Manufacturer Part Number"
+	1    6750 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4700 5850 4700
+Wire Wire Line
+	5850 4700 5850 4800
+Wire Wire Line
+	5850 4800 5950 4800
+Wire Wire Line
+	5950 4800 5950 4750
+Wire Wire Line
+	5950 4850 5950 4800
+Connection ~ 5950 4800
+Wire Wire Line
+	5950 4450 5950 4400
+Wire Wire Line
+	5950 4400 5750 4500
+Wire Wire Line
+	6300 4450 6300 4400
+Wire Wire Line
+	6300 4400 5950 4400
+Connection ~ 5950 4400
+Wire Wire Line
+	5750 4400 5950 4400
+Wire Wire Line
+	6750 4450 6750 4400
+Wire Wire Line
+	6750 4400 6300 4400
+Connection ~ 6300 4400
+Wire Wire Line
+	6300 4750 6300 4800
+Wire Wire Line
+	6300 4800 5950 4800
+$Comp
+L power:GND #PWR021
+U 1 1 5BE01125
+P 6750 4800
+F 0 "#PWR021" H 6750 4550 50  0001 C CNN
+F 1 "GND" H 6755 4627 50  0000 C CNN
+F 2 "" H 6750 4800 50  0001 C CNN
+F 3 "" H 6750 4800 50  0001 C CNN
+	1    6750 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 4800 6750 4750
+$Comp
+L power:GND #PWR018
+U 1 1 5BE01C66
+P 5950 5200
+F 0 "#PWR018" H 5950 4950 50  0001 C CNN
+F 1 "GND" H 5955 5027 50  0000 C CNN
+F 2 "" H 5950 5200 50  0001 C CNN
+F 3 "" H 5950 5200 50  0001 C CNN
+	1    5950 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 5200 5950 5150
+NoConn ~ 4650 4800
+$Comp
+L power:GND #PWR04
+U 1 1 5BE06A45
+P 3750 4800
+F 0 "#PWR04" H 3750 4550 50  0001 C CNN
+F 1 "GND" H 3755 4627 50  0000 C CNN
+F 2 "" H 3750 4800 50  0001 C CNN
+F 3 "" H 3750 4800 50  0001 C CNN
+	1    3750 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4800 3750 4750
+Connection ~ 4450 4400
+$Comp
+L Device:R R1
+U 1 1 5BE0F00B
+P 4050 5100
+F 0 "R1" H 3981 5054 50  0000 R CNN
+F 1 "100k" H 3981 5145 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3980 5100 50  0001 C CNN
+F 3 "~" H 4050 5100 50  0001 C CNN
+F 4 "Digi-Key" H 4050 5100 50  0001 C CNN "Vendor"
+F 5 "1276-3431-1-ND" H 4050 5100 50  0001 C CNN "Vendor Part Number"
+F 6 "Samsung Electro-Mechanics" H 4050 5100 50  0001 C CNN "Manufacturer"
+F 7 "RC1005F103CS" H 4050 5100 50  0001 C CNN "Manufacturer Part Number"
+	1    4050 5100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4450 4400 4650 4500
+Wire Wire Line
+	4450 4400 4650 4400
+Wire Wire Line
+	4650 4700 4550 4700
+Wire Wire Line
+	4050 5250 4050 5300
+$Comp
+L power:GND #PWR05
+U 1 1 5BE14B9A
+P 4050 5300
+F 0 "#PWR05" H 4050 5050 50  0001 C CNN
+F 1 "GND" H 4055 5127 50  0000 C CNN
+F 2 "" H 4050 5300 50  0001 C CNN
+F 3 "" H 4050 5300 50  0001 C CNN
+	1    4050 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4350 3750 4400
+Wire Wire Line
+	4450 4400 3950 4400
+Connection ~ 3750 4400
+Wire Wire Line
+	3750 4400 3750 4450
+Wire Wire Line
+	3950 4450 3950 4400
+Connection ~ 3950 4400
+Wire Wire Line
+	3950 4400 3750 4400
+Wire Wire Line
+	4050 4850 4050 4900
+Wire Wire Line
+	4050 4900 4550 4900
+Wire Wire Line
+	4550 4700 4550 4900
+Wire Wire Line
+	4050 4950 4050 4900
+Connection ~ 4050 4900
+Wire Wire Line
+	6750 4400 7200 4400
+Connection ~ 6750 4400
+Connection ~ 7200 4400
+Wire Wire Line
+	7200 4400 7200 4350
+$Comp
+L power:+3V3 #PWR024
+U 1 1 5BE31B40
+P 7200 4350
+F 0 "#PWR024" H 7200 4200 50  0001 C CNN
+F 1 "+3V3" H 7215 4523 50  0000 C CNN
+F 2 "" H 7200 4350 50  0001 C CNN
+F 3 "" H 7200 4350 50  0001 C CNN
+	1    7200 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5BE423A3
+P 3700 2050
+F 0 "#PWR01" H 3700 1900 50  0001 C CNN
+F 1 "+5V" H 3715 2223 50  0000 C CNN
+F 2 "" H 3700 2050 50  0001 C CNN
+F 3 "" H 3700 2050 50  0001 C CNN
+	1    3700 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5BE4246B
+P 3700 2850
+F 0 "#PWR02" H 3700 2600 50  0001 C CNN
+F 1 "GND" H 3705 2677 50  0000 C CNN
+F 2 "" H 3700 2850 50  0001 C CNN
+F 3 "" H 3700 2850 50  0001 C CNN
+	1    3700 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5BE4C079
+P 6400 3350
+F 0 "#FLG03" H 6400 3425 50  0001 C CNN
+F 1 "PWR_FLAG" H 6400 3523 50  0000 C CNN
+F 2 "" H 6400 3350 50  0001 C CNN
+F 3 "~" H 6400 3350 50  0001 C CNN
+	1    6400 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6400 3350 6400 3300
+Wire Wire Line
+	6400 3300 6100 3300
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5BE520B3
+P 4000 2050
+F 0 "#FLG01" H 4000 2125 50  0001 C CNN
+F 1 "PWR_FLAG" H 4000 2224 50  0000 C CNN
+F 2 "" H 4000 2050 50  0001 C CNN
+F 3 "~" H 4000 2050 50  0001 C CNN
+	1    4000 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG04
+U 1 1 5BE53A2D
+P 6850 2650
+F 0 "#FLG04" H 6850 2725 50  0001 C CNN
+F 1 "PWR_FLAG" H 6850 2824 50  0000 C CNN
+F 2 "" H 6850 2650 50  0001 C CNN
+F 3 "~" H 6850 2650 50  0001 C CNN
+	1    6850 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2650 6850 2700
+Wire Wire Line
+	6850 2700 7200 2700
+Connection ~ 7200 2700
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5BE570B8
+P 4800 2350
+F 0 "#FLG02" H 4800 2425 50  0001 C CNN
+F 1 "PWR_FLAG" H 4800 2524 50  0000 C CNN
+F 2 "" H 4800 2350 50  0001 C CNN
+F 3 "~" H 4800 2350 50  0001 C CNN
+	1    4800 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2350 4800 2400
+Wire Wire Line
+	4800 2400 5200 2400
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 5BE0F44E
+P 5100 6200
+F 0 "J3" V 4973 6112 50  0000 R CNN
+F 1 "+3V3" V 5064 6112 50  0000 R CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 5100 6200 50  0001 C CNN
+F 3 "~" H 5100 6200 50  0001 C CNN
+	1    5100 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 5BE0F6DF
+P 5300 6200
+F 0 "J5" V 5173 6280 50  0000 L CNN
+F 1 "+3V3" V 5264 6280 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 5300 6200 50  0001 C CNN
+F 3 "~" H 5300 6200 50  0001 C CNN
+	1    5300 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 5BE0F751
+P 5100 6350
+F 0 "J4" V 5066 6430 50  0000 L CNN
+F 1 "GND" V 4975 6430 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5100 6350 50  0001 C CNN
+F 3 "~" H 5100 6350 50  0001 C CNN
+	1    5100 6350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J6
+U 1 1 5BE0F99F
+P 5300 6350
+F 0 "J6" V 5266 6262 50  0000 R CNN
+F 1 "GND" V 5175 6262 50  0000 R CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5300 6350 50  0001 C CNN
+F 3 "~" H 5300 6350 50  0001 C CNN
+	1    5300 6350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR09
+U 1 1 5BE0FB84
+P 5100 5950
+F 0 "#PWR09" H 5100 5800 50  0001 C CNN
+F 1 "+3V3" H 5115 6123 50  0000 C CNN
+F 2 "" H 5100 5950 50  0001 C CNN
+F 3 "" H 5100 5950 50  0001 C CNN
+	1    5100 5950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5BE0FD16
+P 5100 6600
+F 0 "#PWR010" H 5100 6350 50  0001 C CNN
+F 1 "GND" H 5105 6427 50  0000 C CNN
+F 2 "" H 5100 6600 50  0001 C CNN
+F 3 "" H 5100 6600 50  0001 C CNN
+	1    5100 6600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 6600 5100 6550
+Wire Wire Line
+	5100 6000 5100 5950
+$Comp
+L power:+3V3 #PWR013
+U 1 1 5BE138CC
+P 5300 5950
+F 0 "#PWR013" H 5300 5800 50  0001 C CNN
+F 1 "+3V3" H 5315 6123 50  0000 C CNN
+F 2 "" H 5300 5950 50  0001 C CNN
+F 3 "" H 5300 5950 50  0001 C CNN
+	1    5300 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 6000 5300 5950
+$Comp
+L power:GND #PWR014
+U 1 1 5BE1581D
+P 5300 6600
+F 0 "#PWR014" H 5300 6350 50  0001 C CNN
+F 1 "GND" H 5305 6427 50  0000 C CNN
+F 2 "" H 5300 6600 50  0001 C CNN
+F 3 "" H 5300 6600 50  0001 C CNN
+	1    5300 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 6600 5300 6550
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 5BE38021
+P 3700 2350
+F 0 "J1" V 3573 2262 50  0000 R CNN
+F 1 "+5Vin" V 3664 2262 50  0000 R CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 3700 2350 50  0001 C CNN
+F 3 "~" H 3700 2350 50  0001 C CNN
+	1    3700 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5BE38241
+P 3700 2600
+F 0 "J2" V 3666 2680 50  0000 L CNN
+F 1 "GND" V 3575 2680 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3700 2600 50  0001 C CNN
+F 3 "~" H 3700 2600 50  0001 C CNN
+	1    3700 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3700 2850 3700 2800
+Wire Wire Line
+	3700 2050 3700 2100
+Wire Wire Line
+	4000 2050 4000 2100
+Wire Wire Line
+	4000 2100 3700 2100
+Connection ~ 3700 2100
+Wire Wire Line
+	3700 2100 3700 2150
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 5BE49AA5
+P 4050 4650
+F 0 "SW1" V 4100 4500 50  0000 R CNN
+F 1 "SW_SPDT" V 4000 4500 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_SPDT_CK-JS102011SAQ" H 4050 4650 50  0001 C CNN
+F 3 "https://www.ckswitches.com/media/1422/js.pdf" H 4050 4650 50  0001 C CNN
+F 4 "Digi-Key" H 4050 4650 50  0001 C CNN "Vendor"
+F 5 "401-1999-1-ND" H 4050 4650 50  0001 C CNN "Vendor Part Number"
+F 6 "C&K" H 4050 4650 50  0001 C CNN "Manufacturer"
+F 7 "JS102011SAQN" H 4050 4650 50  0001 C CNN "Manufacturer Part Number"
+	1    4050 4650
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 4150 4450
+$EndSCHEMATC

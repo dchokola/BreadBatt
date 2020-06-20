@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/gunter/design/KiCad/BreadBatt/BreadBatt.sch</source>
+    <date>Wed 07 Nov 2018 02:16:42 AM EST</date>
+    <tool>Eeschema 5.0.1+dfsg1-3</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date>2018-11-04</date>
+        <source>BreadBatt.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>LTC4054ES5-4.2</value>
+      <footprint>Package_TO_SOT_SMD:TSOT-23-5</footprint>
+      <datasheet>http://cds.linear.com/docs/en/datasheet/405442xf.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Linear Technology/Analog Devices</field>
+        <field name="Manufacturer Part Number">LTC4054ES5-4.2#TRMPBF</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">LTC4054ES5-4.2#TRMPBFCT-ND</field>
+      </fields>
+      <libsource lib="Battery_Management" part="LTC4054ES5-4.2" description="Constant-current/constant-voltage linear charger for single cell lithium-ion batteries with 2.9V Trickle Charge, 4.5V to 6.5V VDD, -40 to +85 degree Celcius, TSOT-23-5"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDF5D85</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>Conn_01x05_Shielded</value>
+      <footprint>Connector_USB:USB_Micro-B_Molex-105017-0001</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Molex, LLC</field>
+        <field name="Manufacturer Part Number">1050170001</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">WM1399CT-ND</field>
+      </fields>
+      <libsource lib="Connector_Generic_Shielded" part="Conn_01x05_Shielded" description="Generic shielded connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDF5FCE</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>BAT120C,115</value>
+      <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BAT120_SERIES.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Nexperia USA Inc.</field>
+        <field name="Manufacturer Part Number">BAT120C,115</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">1727-5450-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky_x2_KCom_AKA" description="Dual Schottky diode, common cathode on pin 2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDF6BB3</tstamp>
+    </comp>
+    <comp ref="BT1">
+      <value>3.7 V Li-Ion 16340</value>
+      <footprint>KiCad:BHC-CR123A</footprint>
+      <datasheet>http://shogyo.com/wp-content/themes/shogyo/pdf/bhc-cr123a(revised).pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Shogyo International Corp.</field>
+        <field name="Manufacturer Part Number">BHC-CR123A</field>
+      </fields>
+      <libsource lib="Device" part="Battery_Cell" description="Single-cell battery"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDF70C9</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>1k27</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Panasonic Electronic Components</field>
+        <field name="Manufacturer Part Number">ERJ-2RKF1271X</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">P1.27KLCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDF7609</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">TDK Corporation</field>
+        <field name="Manufacturer Part Number">CGB2A1X5R1C105K033BC</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">445-13181-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDF7C68</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LED, Green</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Wurth Electronics Inc.</field>
+        <field name="Manufacturer Part Number">150040VS73240</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">732-11992-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDFA81E</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED, Yellow</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Wurth Electronics Inc.</field>
+        <field name="Manufacturer Part Number">150040YS73240</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">732-11993-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDFA985</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Manufacturer Part Number">RC1005F102CS</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">1276-3430-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDFAEA8</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Manufacturer Part Number">RC1005F102CS</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">1276-3430-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDFB016</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>LD39200D</value>
+      <footprint>Package_DFN_QFN:DFN-8-1EP_4x4mm_P0.8mm_EP2.5x3.6mm</footprint>
+      <datasheet>https://www.st.com/content/ccc/resource/technical/document/datasheet/4b/e6/2e/a4/16/04/46/9d/DM00102135.pdf/files/DM00102135.pdf/jcr:content/translations/en.DM00102135.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">STMicroelectronics</field>
+        <field name="Manufacturer Part Number">LD39200DPUR</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">497-14961-1-ND</field>
+      </fields>
+      <libsource lib="KiCad" part="LD39200D" description="Linear Regulator, Adjustible, 2A"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDFB3E8</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Manufacturer Part Number">RC1005F102CS</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">1276-3430-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDFBC2C</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>5k6</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Manufacturer Part Number">RC0402JR-075K6L</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">311-5.6KJRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDFBDFA</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Manufacturer Part Number">CL10X106MQ8NNNC</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">1276-6827-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDFC7C1</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>470n</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Manufacturer Part Number">CL05F474ZQ5NNNC</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">1276-1752-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDFC893</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Manufacturer Part Number">CL10X106MQ8NNNC</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">1276-6827-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDFC9C6</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Manufacturer Part Number">RC1005F103CS</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">1276-3431-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE0F00B</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>+3V3</value>
+      <footprint>TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE0F44E</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>+3V3</value>
+      <footprint>TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE0F6DF</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>GND</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE0F751</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>GND</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE0F99F</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>+5Vin</value>
+      <footprint>TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE38021</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>GND</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE38241</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_SPDT</value>
+      <footprint>Button_Switch_SMD:SW_SPDT_CK-JS102011SAQ</footprint>
+      <datasheet>https://www.ckswitches.com/media/1422/js.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">C&amp;K</field>
+        <field name="Manufacturer Part Number">JS102011SAQN</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">401-1999-1-ND</field>
+      </fields>
+      <libsource lib="Switch" part="SW_SPDT" description="Switch, single pole double throw"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE49AA5</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Battery_Management" part="LTC4054ES5-4.2">
+      <aliases>
+        <alias>LTC4054XES5-4.2</alias>
+      </aliases>
+      <description>Constant-current/constant-voltage linear charger for single cell lithium-ion batteries with 2.9V Trickle Charge, 4.5V to 6.5V VDD, -40 to +85 degree Celcius, TSOT-23-5</description>
+      <docs>http://cds.linear.com/docs/en/datasheet/405442xf.pdf</docs>
+      <footprints>
+        <fp>TSOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LTC4054ES5-4.2</field>
+        <field name="Footprint">Package_TO_SOT_SMD:TSOT-23-5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~CHRG" type="openCol"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="BAT" type="power_out"/>
+        <pin num="4" name="VCC" type="power_in"/>
+        <pin num="5" name="PROG" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x01">
+      <description>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic_Shielded" part="Conn_01x05_Shielded">
+      <description>Generic shielded connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??-1SH*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x05_Shielded</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="SH" name="Shield" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Battery_Cell">
+      <description>Single-cell battery</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery_Cell</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky_x2_KCom_AKA">
+      <description>Dual Schottky diode, common cathode on pin 2</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky_x2_KCom_AKA</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="K" type="passive"/>
+        <pin num="3" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="KiCad" part="LD39200D">
+      <description>Linear Regulator, Adjustible, 2A</description>
+      <footprints>
+        <fp>DFN-8*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LD39200D</field>
+        <field name="Footprint">Package_DFN_QFN:DFN-8-1EP_4x4mm_P0.8mm_EP2.5x3.6mm</field>
+        <field name="Datasheet">https://www.st.com/content/ccc/resource/technical/document/datasheet/4b/e6/2e/a4/16/04/46/9d/DM00102135.pdf/files/DM00102135.pdf/jcr:content/translations/en.DM00102135.pdf</field>
+        <field name="Manufacturer">STMicroelectronics</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="power_out"/>
+        <pin num="2" name="OUT" type="passive"/>
+        <pin num="3" name="ADJ/SENSE" type="passive"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="PG" type="output"/>
+        <pin num="6" name="EN" type="input"/>
+        <pin num="7" name="IN" type="power_in"/>
+        <pin num="8" name="IN" type="power_in"/>
+        <pin num="9" name="EP" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_SPDT">
+      <description>Switch, single pole double throw</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPDT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Battery_Management">
+      <uri>/usr/share/kicad/library/Battery_Management.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad/library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Connector_Generic_Shielded">
+      <uri>/usr/share/kicad/library/Connector_Generic_Shielded.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="KiCad">
+      <uri>/gunter/design/KiCad/KiCad.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/usr/share/kicad/library/Switch.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+BATT">
+      <node ref="U2" pin="8"/>
+      <node ref="U2" pin="7"/>
+      <node ref="R2" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="U1" pin="3"/>
+      <node ref="BT1" pin="1"/>
+      <node ref="SW1" pin="1"/>
+    </net>
+    <net code="2" name="-BATT">
+      <node ref="BT1" pin="2"/>
+      <node ref="C2" pin="1"/>
+      <node ref="D3" pin="1"/>
+      <node ref="U2" pin="9"/>
+      <node ref="U2" pin="4"/>
+      <node ref="R5" pin="1"/>
+      <node ref="J7" pin="SH"/>
+      <node ref="J7" pin="5"/>
+      <node ref="U1" pin="2"/>
+      <node ref="R3" pin="1"/>
+      <node ref="J2" pin="1"/>
+      <node ref="J6" pin="1"/>
+      <node ref="J4" pin="1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C1" pin="1"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="3" name="Net-(U2-Pad5)">
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="4" name="Net-(R1-Pad2)">
+      <node ref="R1" pin="2"/>
+      <node ref="U2" pin="6"/>
+      <node ref="SW1" pin="2"/>
+    </net>
+    <net code="5" name="Net-(C3-Pad2)">
+      <node ref="R5" pin="2"/>
+      <node ref="U2" pin="3"/>
+      <node ref="C3" pin="2"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="6" name="+3V3">
+      <node ref="C3" pin="1"/>
+      <node ref="R4" pin="2"/>
+      <node ref="U2" pin="2"/>
+      <node ref="C4" pin="1"/>
+      <node ref="U2" pin="1"/>
+      <node ref="J5" pin="1"/>
+      <node ref="J3" pin="1"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="7" name="+5V">
+      <node ref="D2" pin="1"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="8" name="Net-(SW1-Pad3)">
+      <node ref="SW1" pin="3"/>
+    </net>
+    <net code="9" name="VBUS">
+      <node ref="D2" pin="3"/>
+      <node ref="J7" pin="1"/>
+    </net>
+    <net code="10" name="Net-(R3-Pad2)">
+      <node ref="U1" pin="5"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="11" name="Net-(J7-Pad2)">
+      <node ref="J7" pin="2"/>
+    </net>
+    <net code="12" name="Net-(J7-Pad3)">
+      <node ref="J7" pin="3"/>
+    </net>
+    <net code="13" name="Net-(J7-Pad4)">
+      <node ref="J7" pin="4"/>
+    </net>
+    <net code="14" name="Net-(D3-Pad2)">
+      <node ref="R6" pin="1"/>
+      <node ref="D3" pin="2"/>
+    </net>
+    <net code="15" name="Net-(D1-Pad2)">
+      <node ref="R2" pin="1"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="16" name="Net-(D1-Pad1)">
+      <node ref="U1" pin="1"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="17" name="Net-(C2-Pad2)">
+      <node ref="U1" pin="4"/>
+      <node ref="D2" pin="2"/>
+      <node ref="C2" pin="2"/>
+    </net>
+  </nets>
+</export>
